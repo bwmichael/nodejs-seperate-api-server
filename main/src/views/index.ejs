@@ -1,0 +1,97 @@
+<html><head>
+  <title>index</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <script src="/jquery/jquery.min.js"></script>
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+
+      <script src="/moment/moment.js"></script>
+
+    <link rel="shortcut icon" href="/public/images/favicon.ico" type="image/x-icon" />
+
+    <script type="text/javascript">
+            //Call the method on pageload
+            $(window).on('load', function() {
+
+              loadData();
+
+
+
+            });
+        </script>
+
+
+  </head>
+<style>
+
+</style>
+
+
+<body>
+
+
+
+<button id="test" >Click me</button>
+
+
+
+<script type="text/javascript">
+
+$('#test').click(function() {
+      loadData();
+
+    });
+
+
+function loadData() {
+
+              $.getJSON("http://10.0.0.142:9002/", function(data) {
+                console.log(data);
+                  // $.each(data, function(key, value) {
+                  //     //console.log(value.Location);
+                  //     $('#departmentList').append($("<option></option>").val(value.DepartmentID).html(value.DepartmentName));
+                  // });
+                  //
+                  //
+                  // //console.log("location Selected: " + $("#location").val());
+                  //
+                  //
+                  //
+                  //
+                  // // Reset selections
+                  // $('#departmentList').prop('selectedIndex', 0);
+                  // //$('#department').prop('selectedIndex',0);
+                  // //$('#shifttime').prop('selectedIndex',0);
+                  //
+                  // findMaxTrained();
+
+              });
+
+
+
+
+              // $.ajax({
+              //      url:"http://localhost:9002/",
+              //      dataType: 'jsonp', // Notice! JSONP <-- P (lowercase)
+              //      success:function(json){
+              //          // do stuff with json (in this case an array)
+              //          console.log(json);
+              //          //alert(json);
+              //      },
+              //      error:function(){
+              //          alert("Error");
+              //      }
+              // });
+
+
+
+          };
+</script>
+
+
+</body>
+</html>

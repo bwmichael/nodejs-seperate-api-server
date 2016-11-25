@@ -1,0 +1,11 @@
+{
+  "name": "nodejs-express-example-01",
+  "version": "0.0.0",
+  "description": "A NodeJS example to show how the basics are setup",
+  "main": "server.js",
+  "repository": "",
+  "author": "Brandon Michael <brandon@bwmichael.com>",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}

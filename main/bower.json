@@ -1,0 +1,27 @@
+{
+  "name": "main",
+  "description": "",
+  "main": "server.js",
+  "authors": [
+    "Brandon W Michael"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "jquery-ui": "^1.11.4",
+    "font-awesome": "^4.6.3",
+    "bootstrap": "^3.3.6",
+    "moment": "^2.14.1",
+    "fastselect": "^0.6.1",
+    "jquery-searchable": "^1.1.0",
+    "percircle": "^1.0.14",
+    "excel-exporter": "excelexporter#^1.0.2",
+    "alertifyjs": "^1.0.11"
+  }
+}
